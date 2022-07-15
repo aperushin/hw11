@@ -14,12 +14,12 @@
     <script type="text/javascript">
         function OnSubmitForm()
         {
-          if(document.search.search_by[0].checked === true)
+          if (document.search.search_by[0].checked === true)
           {
             document.search.action ="/search";
           }
           else
-          if(document.search.search_by[1].checked === true)
+          if (document.search.search_by[1].checked === true)
           {
             document.search.action ="/skills";
           }
@@ -28,14 +28,13 @@
     </script>
 
     <h4>Поиск</h4>
-     <form name="search" onsubmit="return OnSubmitForm();">
-        <input type="text" name="search_arg"><br>
-        <input type="radio" name="search_by" value="1" checked>По имени
-        <input type="radio" name="search_by" value="2">По навыку
-        <p>
-        <input type="submit" name="submit" value="Искать">
-        </p>
-     </form>
-
+    <form name="search" onsubmit="return OnSubmitForm();">
+       <input type="text" name="search_arg"><br>
+       <input type="radio" name="search_by" value="1" checked>По имени
+       <input type="radio" name="search_by" value="2">По навыку
+       <p>
+       <input type="submit" name="submit" value="Искать">
+       </p>
+    </form>
 </body>
 </html>
